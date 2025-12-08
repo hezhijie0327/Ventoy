@@ -2,7 +2,7 @@
   "auto_install": [
     {
       "autosel": 0,
-      "parent": "/Images/Windows",
+      "parent": "/ISO/Windows",
       "template": [
         "/ventoy/script/Windows_10_11/education.xml",
         "/ventoy/script/Windows_10_11/education_n.xml",
@@ -34,7 +34,7 @@
       "VTOY_DEFAULT_MENU_MODE": "1"
     },
     {
-      "VTOY_DEFAULT_SEARCH_ROOT": "/Images"
+      "VTOY_DEFAULT_SEARCH_ROOT": "/ISO"
     },
     {
       "VTOY_FILE_FLT_EFI": "0"
