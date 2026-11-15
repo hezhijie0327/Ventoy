@@ -1,12 +1,10 @@
-# Ventoy 自动安装配置
+# Ventoy
 
-这是一个 Ventoy 配置仓库，包含用于自动化 Windows 10/11 安装的配置文件和脚本。
-
-## 项目简介
+这是一个 Ventoy 配置仓库，包含用于自动化 Windows 10/11 安装的配置文件和脚本。代理开发指南见 [AGENTS.md](AGENTS.md)。
 
 本项目提供了一个完整的 Ventoy 配置方案，可以通过 USB 启动盘自动安装各种版本的 Windows 10/11，无需手动干预。
 
-### 主要功能
+## 特性
 
 - 自动识别并显示 Windows ISO 文件
 - 提供所有主要 Windows 版本的无应答安装选项
@@ -14,33 +12,7 @@
 - 自定义 Ventoy 启动菜单行为
 - 支持 Windows 各版本的产品密钥预配置
 
-## 文件结构
-
-```
-Ventoy/
-├── LICENSE                         # Apache 2.0 许可证
-├── AGENTS.md                       # 代理开发指南
-└── ventoy/
-    ├── ventoy.json                 # Ventoy 主配置文件
-    └── script/
-        └── Windows_10_11/           # Windows 10/11 无应答安装脚本
-            ├── education.xml        # 教育版
-            ├── education_n.xml      # 教育版 N
-            ├── enterprise.xml       # 企业版
-            ├── enterprise_g.xml     # 企业版 G
-            ├── enterprise_g_n.xml   # 企业版 G N
-            ├── enterprise_n.xml     # 企业版 N
-            ├── home.xml             # 家庭版
-            ├── home_n.xml           # 家庭版 N
-            ├── pro.xml              # 专业版
-            ├── pro_4_workstations.xml    # 专业版工作站
-            ├── pro_4_workstations_n.xml  # 专业版工作站 N
-            ├── pro_education.xml         # 专业教育版
-            ├── pro_education_n.xml       # 专业教育版 N
-            └── pro_n.xml                # 专业版 N
-```
-
-## 使用方法
+## 快速开始
 
 ### 准备工作
 
@@ -86,6 +58,32 @@ Ventoy/
 - EULA 自动接受
 - 安装参数优化
 
+## 文件结构
+
+```text
+Ventoy/
+├── LICENSE                         # Apache 2.0 许可证
+├── AGENTS.md                       # 代理开发指南
+└── ventoy/
+    ├── ventoy.json                 # Ventoy 主配置文件
+    └── script/
+        └── Windows_10_11/           # Windows 10/11 无应答安装脚本
+            ├── education.xml        # 教育版
+            ├── education_n.xml      # 教育版 N
+            ├── enterprise.xml       # 企业版
+            ├── enterprise_g.xml     # 企业版 G
+            ├── enterprise_g_n.xml   # 企业版 G N
+            ├── enterprise_n.xml     # 企业版 N
+            ├── home.xml             # 家庭版
+            ├── home_n.xml           # 家庭版 N
+            ├── pro.xml              # 专业版
+            ├── pro_4_workstations.xml    # 专业版工作站
+            ├── pro_4_workstations_n.xml  # 专业版工作站 N
+            ├── pro_education.xml         # 专业教育版
+            ├── pro_education_n.xml       # 专业教育版 N
+            └── pro_n.xml                # 专业版 N
+```
+
 ## 支持的 Windows 版本
 
 ### Windows 10/11 版本
@@ -127,10 +125,6 @@ python -m json.tool ventoy.json
 xmllint --noout ventoy/script/Windows_10_11/*.xml
 ```
 
-## 许可证
-
-本项目采用 Apache License 2.0 with Commons Clause 许可证，详见 [LICENSE](LICENSE) 文件。
-
 ## 资源链接
 
 - [Ventoy 官方文档](https://www.ventoy.net/cn/doc_start.html)
@@ -154,3 +148,7 @@ xmllint --noout ventoy/script/Windows_10_11/*.xml
 - 仅在授权设备上使用
 
 作者不对因使用本配置造成的任何损失承担责任。
+
+## License
+
+[Apache License 2.0 with Commons Clause v1.0](LICENSE)
