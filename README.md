@@ -1,5 +1,7 @@
 # Ventoy
 
+[![License](https://img.shields.io/badge/License-Apache%202.0--Commons%20Clause-blue)](LICENSE)
+
 这是一个 Ventoy 配置仓库，包含用于自动化 Windows 10/11 安装的配置文件和脚本。代理开发指南见 [AGENTS.md](AGENTS.md)。
 
 本项目提供了一个完整的 Ventoy 配置方案，可以通过 USB 启动盘自动安装各种版本的 Windows 10/11，无需手动干预。
